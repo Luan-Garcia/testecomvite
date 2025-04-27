@@ -1,8 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 // Páginas iniciais
 import HomePage from '../Pages/Home/HomePage.jsx'
-// import RoadmapPage from '../Pages/Home/HomePage';
-// Páginas Roadmaps
+import Roadmap from '../Pages/Roadmaps/Roadmap.jsx';
 import DevWebPage from '../Pages/DesenvolvimentoWeb/WebDs.jsx';  
 import AieDadosPage from '../Pages/AiDados/DadosAi.jsx'; 
 import CyberSecurityPage from '../Pages/SecurityCyber/CyberSec.jsx'; 
@@ -22,7 +21,7 @@ const AppRouter = () => {
         <Router>
             <Routes>
                 <Route path="/" element={<HomePage />} />
-                {/* <Route path="/roadmaps" element={<RoadmapPage />} /> */}
+                <Route path="/roadmaps" element={<Roadmap />} />
                 <Route path="/roadmaps/web" element={<DevWebPage />} />
                 <Route path="/roadmaps/ai_e_dados" element={<AieDadosPage />} />
                 <Route path="/roadmaps/cybersecurity" element={<CyberSecurityPage />} />
