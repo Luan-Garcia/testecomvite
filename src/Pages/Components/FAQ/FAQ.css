@@ -1,0 +1,105 @@
+/* FAQ Container */
+.faq {
+    padding: 3rem 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+  }
+  
+  .accordion {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .accordion-item {
+    margin-bottom: 0.5rem;
+    border-radius: 4px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease; /* Sincroniza a transição das bordas com o conteúdo */
+  }
+  
+  .accordion-item:hover {
+    border-color: rgba(122, 87, 216, 0.5);
+  }
+  
+  .accordion-header {
+    background-color: var(--dark-accent);
+    padding: 1.2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+  }
+  
+  .accordion-header:hover {
+    background-color: rgba(67, 97, 238, 0.1);
+  }
+  
+  .arrow {
+    margin-right: 0.8rem;
+    font-size: 0.8rem;
+    transition: transform 0.3s ease;
+    color: var(--accent-color);
+  }
+  
+  .arrow.open {
+    transform: rotate(180deg);
+  }
+  
+  .accordion-content {
+    background-color: rgba(24, 24, 27, 0.8);
+    padding: 0 1.2rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, padding 0.3s ease-out; /* Sincroniza a transição do conteúdo e do padding */
+  }
+  
+  .accordion-content.active {
+    max-height: 300px;
+    padding: 1.2rem;
+    transition: max-height 0.3s ease-in, padding 0.3s ease-in; /* Sincroniza a transição ao abrir */
+  }
+  
+  .accordion-content p {
+    margin: 0;
+    line-height: 1.6;
+    opacity: 0.9;
+  }
+  
+  /* Responsive Adjustments for Accordion */
+  @media (max-width: 768px) {
+    .accordion-header {
+      padding: 1rem;
+      font-size: 0.95rem;
+    }
+  
+    .accordion-content {
+      padding: 0 1rem;
+    }
+  
+    .accordion-content.active {
+      padding: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .accordion-header {
+      padding: 0.8rem;
+    }
+  
+    .accordion-content {
+      padding: 0 0.8rem;
+    }
+  
+    .accordion-content.active {
+      padding: 0.8rem;
+    }
+  }
+  
