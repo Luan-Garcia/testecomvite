@@ -1,7 +1,8 @@
 import React from 'react'
 import './mobiledev.css'
 import { Link } from 'react-router-dom'
-import NavBar from '../Components/NavBar/NavBar.jsx'
+// import NavBar from '../Components/NavBar/NavBar.jsx'
+import NavBar from '../../Components/NavBar/NavBar.jsx'; 
 
 const MobileDev = () => {
     const steps = [

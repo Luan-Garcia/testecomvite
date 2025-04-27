@@ -1,7 +1,7 @@
 import React from 'react'
 import './inovaçoes.css'
 import { Link } from 'react-router-dom'
-import NavBar from '../Components/NavBar/NavBar.jsx'
+import NavBar from '../../Components/NavBar/NavBar.jsx'
 
 const InovaçoesTech = () => {
     const steps = [

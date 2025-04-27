@@ -1,44 +1,38 @@
 import React from 'react';
-import './homepage.css';
-import DsWeb from '../Components/DesenvolvimentoWeb/DsWeb';
-import AiDados from '../Components/AiDados/AiDados';
-import CyberSecurity from '../Components/CyberSecurity/CyberSecurity';
-import BancoDados from '../Components/BancoDeDados/BancoDados';
-import InfraRedes from '../Components/InfraeRedes/infraeredes';
-import GameDevelop from '../Components/DevGames/GameDevelop';
-import Dados from '../Components/Dados/Dados';
-import TecEmergentes from '../Components/TecEmergentes/TecEmergentes';
-import SisOperacional from '../Components/SistemasOperacionais/sistemaoperacional';
-import DevMobile from '../Components/DevMobile/DevMobile';
-import Hardware from '../Components/Hardware/Hardware';
-import NavBar from '../Components/NavBar/NavBar';
-import { Link } from 'react-router-dom';
+import './homepage.css'; 
+import anonImage from '../../img/anon.png'; 
+import NavBar from '../../Components/NavBar/NavBar.jsx';
+import FAQ from '../../Components/FAQ/FAQ.jsx'
 
 const HomePage = () => {
-
   return (
-    <>
-      <NavBar/>
+    <div>
+        <NavBar/>
+      <main>
+        <section className="hero">
+          <div className="hero-content">
+            <h1>ILLUSION<br />ROADMAPS</h1>
+            <p className="hero-description">
+              Diversos guias de<br />
+              aprendizado na área de<br />
+              tecnologia
+            </p>
+          </div>
+          <div className="hero-image">
+            <div className="blue-circle"></div>
+            <img src={anonImage} alt="Masked figure" className="masked-figure" />
+          </div>
+        </section>
 
-      <div className="main-title">
-        <h1>Illusion Roadmaps</h1>
-        <p>Diversos guias de aprendizado na área de tecnologia</p>
-      </div>
+      <FAQ/>
+      </main>
 
-      <div className="roadmap-grid" style={{gap: '2px'}}>
-      <Link to="/roadmaps/web"><DsWeb /></Link>
-      <Link to="/roadmaps/ai_e_dados"><AiDados /></Link>
-      <Link to="/roadmaps/cybersecurity"><CyberSecurity /></Link>
-      <Link to="/roadmaps/dbs"><BancoDados /></Link>
-      <Link to="/roadmaps/infra_e_redes"><InfraRedes /></Link>
-      <Link to="/roadmaps/gamedev"><GameDevelop /></Link>
-      <Link to="/roadmaps/programação"><Dados /></Link>
-      <Link to="/roadmaps/inovações"><TecEmergentes /></Link>
-      <Link to="/roadmaps/sistemas_operacionais"><SisOperacional /></Link>
-      <Link to="/roadmaps/devmobile"><DevMobile /></Link>
-      <Link to="/roadmaps/hardware"><Hardware /></Link>
-      </div>
-    </>
+      <footer className="footer">
+        <div className="container">
+          <p>© 2025 Illusion Society. <br /> Todos os direitos reservados.</p>
+        </div>
+      </footer>
+    </div>
   );
 };
 

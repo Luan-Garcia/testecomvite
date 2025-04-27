@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import CadastroPage from '../../CadastroPage/CadastroPage.jsx'; // importa o componente popup
+// import CadastroPage from '../../CadastroPage/CadastroPage.jsx'; // importa o componente popup
+import CadastroPage from '../../Pages/CadastroPage/CadastroPage.jsx'
 import './navbar.css';
-import Logo from '../../../img/logo-is.png';
+// import Logo from '../../../img/logo-is.png';
+import Logo from '../../img/logo-is.png'
 
 const NavBar = () => {
     const [showCadastro, setShowCadastro] = useState(false);

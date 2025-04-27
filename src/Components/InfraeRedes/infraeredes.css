@@ -25,15 +25,15 @@ body {
     font-weight: 500;
   }
 
-  .auth-buttons button {
-    background: transparent;
-    border: 1px solid #ccc;
-    color: white;
-    padding: 6px 12px;
-    margin-left: 10px;
-    border-radius: 20px;
-    cursor: pointer;
-  }
+  /* .auth-buttons button { */
+  /*   background: transparent; */
+  /*   border: 1px solid #ccc; */
+  /*   color: white; */
+  /*   padding: 6px 12px; */
+  /*   margin-left: 10px; */
+  /*   border-radius: 20px; */
+  /*   cursor: pointer; */
+  /* } */
 
   .main-title {
     text-align: center;

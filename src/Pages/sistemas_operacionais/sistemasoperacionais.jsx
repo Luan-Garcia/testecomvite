@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './sistemas_operacionais.css'; // Certifique-se de que esse CSS existe
-import NavBar from '../Components/NavBar/NavBar.jsx';
+// import NavBar from '../Components/NavBar/NavBar.jsx';
+import NavBar from '../../Components/NavBar/NavBar.jsx'; 
 
 const SistemasOperacionais = () => {
     const steps = [
