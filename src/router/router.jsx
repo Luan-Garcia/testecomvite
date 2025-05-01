@@ -13,6 +13,7 @@ import Inovaçoes from '../Pages/InovaçõesTech/inovaçoes.jsx';
 import Hardware from '../Pages/Hardware/hardware.jsx';
 import SisOperacional from '../Pages/sistemas_operacionais/sistemasoperacionais.jsx';
 import MobileDev from '../Pages/mobiledev/mobiledev.jsx';
+import Desenvolvedores from '../Pages/Devs/Desenvolvedores.jsx';
 // Páginas Cybersec
 // import Redteam from './Pages/SecurityCyber/areas/RedTeam/redteam.jsx';
 
@@ -21,6 +22,7 @@ const AppRouter = () => {
         <Router>
             <Routes>
                 <Route path="/" element={<HomePage />} />
+                <Route path="/devs" element={<Desenvolvedores/>} />
                 <Route path="/roadmaps" element={<Roadmap />} />
                 <Route path="/roadmaps/web" element={<DevWebPage />} />
                 <Route path="/roadmaps/ai_e_dados" element={<AieDadosPage />} />
